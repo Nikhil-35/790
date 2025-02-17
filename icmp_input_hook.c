@@ -16,8 +16,8 @@ extern struct protosw inetsw[];
 pr_input_t icmp_input_hook;
 /* icmp_input hook. */
 void
-{
 icmp_input_hook(struct mbuf *m, int off)
+{
 struct icmp *icp;
 int hlen = off;
 /* Locate the ICMP message within m. */
